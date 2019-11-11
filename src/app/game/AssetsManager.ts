@@ -97,7 +97,18 @@ const IMAGES: IImagesInfo = {
     'KITCHEN_BG': IMAGES_ROOT + 'kitchen/KITCHEN_BG.png',
     'CREEPY_STAINS': IMAGES_ROOT + 'kitchen/MANCHAS_CHUNGAS.png',
     'FLASHLIGHT': IMAGES_ROOT + 'kitchen/FLASHLIGHT.png',
-    'FLASHLIGHT_INV': IMAGES_ROOT + 'kitchen/FLASHLIGHT_INV.png'
+    'FLASHLIGHT_INV': IMAGES_ROOT + 'kitchen/FLASHLIGHT_INV.png',
+
+    // NEW
+
+    // Liftlobby
+    'LIFTLOBBY_BG': IMAGES_ROOT + 'liftlobby/LIFTLOBBY_BG.png',
+    'LIFT_A_DOOR': IMAGES_ROOT + 'liftlobby/LIFT_A_DOOR.png',
+    'LIFT_B_DOOR': IMAGES_ROOT + 'liftlobby/LIFT_B_DOOR.png',
+    'LIFT_BUTTON': IMAGES_ROOT + 'liftlobby/LIFT_BUTTON.png',
+    'WC_ACCESS': IMAGES_ROOT + 'liftlobby/WC_ACCESS.png',
+    '4TH_FLOOR_SIGNAL': IMAGES_ROOT + 'liftlobby/4TH_FLOOR_SIGNAL.png',
+    'DOOR_LOBBY_TO_KITCHEN_LOBBY': IMAGES_ROOT + 'liftlobby/DOOR_LOBBY_TO_KITCHEN_LOBBY.png',
 };
 
 const FONTS: IFontsInfo = {

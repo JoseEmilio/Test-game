@@ -4,6 +4,7 @@ import { DoctortillaPlayer } from './DoctortillaPlayer';
 import { BackstageScene } from './backstageScene/BackstageScene';
 import { BackyardScene } from './backyardScene/BackyardScene';
 import { KitchenScene } from './kitchenScene/KitchenScene';
+import { LiftLobbyScene } from './liftLobbyScene/LiftLobbyScene';
 import { Directions } from '../engine/utils/Directions';
 import { uiBlocker } from '../engine/ui/UIBlocker.singleton';
 
@@ -15,9 +16,10 @@ export class DoctortillaGame extends Game {
             scenes: [
                 new BackstageScene(),
                 new BackyardScene(),
-                new KitchenScene()
+                new KitchenScene(),
+                new LiftLobbyScene(),
             ],
-            initialSceneId: 'BACKSTAGE',
+            initialSceneId: 'LIFTLOBBY',
             songs: ['ALLI_DONDE', 'SUBETE']
         };
         super(options);
@@ -27,7 +29,7 @@ export class DoctortillaGame extends Game {
         uiBlocker.block();
         let player = this.options.player;
         player.moveTo({ x: 115, y: 187})
-            .then(() => {
+            /*.then(() => {
                return player.wait(1000);
             })
             .then(() => {
@@ -42,7 +44,7 @@ export class DoctortillaGame extends Game {
             })
             .then(() => {
                return player.moveTo({ x: 383, y: 183});
-            })
+            })*/
             .then(() => {
                 uiBlocker.unblock();
             });

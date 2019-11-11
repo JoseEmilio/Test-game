@@ -229,7 +229,28 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'SCARE_THE_SHIT_OUT_OF_ME': 'Este sitio me tiene cagao de miedo.',
         'SHOULD_BE_KETCHUP_TOO': 'Esto DEBERÍA ser ketchup también.',
         'FLASHLIGHT': 'linterna',
-        'USEFUL_FLASHLIGHT': 'Una linterna útil y poderosa.'
+        'USEFUL_FLASHLIGHT': 'Una linterna útil y poderosa.',
+
+        // NEW
+
+        // LIFT LOBBY
+        'LIFT_BUTTON': 'botón ascensor',
+        'MODERN_AND_SEXY_LIFT_BUTTON': 'Un botón de ascensor moderno y sexy.',
+        'MODERN_AND_SEXY_LIFT': 'Un ascensor moderno y sexy.',
+        'LIFT_DOOR': 'ascensor',
+        'DOOR_TO_KITCHEN_LOBBY': 'puerta al interior',
+        'WC_ACCESS': 'acceso al WC',
+        'CANT_GO_WITHOUT_CONTRACT': 'No me puedo ir de aquí sin un mega contrato.',
+        'SMELL_LIKE_PEACH': 'Huele a melocotón y a caca',
+        'CALL_LIFT': 'Ascensooooooooooooooooooooor!!',
+        'SHOULD_PUSH_THE_BUTTON': 'Debería pulsar el botón primero.',
+        '4TH_FLOOR_SIGNAL': 'cartel cuarta planta',
+        'IM_AT_FOURTH_FLOOR': 'Estoy en la cuarta planta.',
+        'DOOR_LOBBY_TO_KITCHEN_LOBBY': 'puerta de acceso',
+        'HIGH_SECURITY': 'De altísima seguridad.'
+
+
+
     },
     'en': {
         'A_BROOM_THE_PERFECT_CLEANING_INSTRUMENT': 'A broom, the perfect cleaning instrument.',
@@ -459,6 +480,24 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'SCARE_THE_SHIT_OUT_OF_ME': 'This place scares the shit out of me.',
         'SHOULD_BE_KETCHUP_TOO': 'These SHOULD be ketchup too.',
         'FLASHLIGHT': 'flashlight',
-        'USEFUL_FLASHLIGHT': 'A powerful useful flashlight.'
+        'USEFUL_FLASHLIGHT': 'A powerful useful flashlight.',
+
+        // NEW
+
+        // LIFT LOBBY
+        'LIFT_BUTTON': 'lift button',
+        'MODERN_AND_SEXY_LIFT_BUTTON': 'A mondern and sexy lift button.',
+        'MODERN_AND_SEXY_LIFT': 'A mondern and sexy lift.',
+        'LIFT_DOOR': 'lift',
+        'DOOR_TO_KITCHEN_LOBBY': 'door to fourth floor',
+        'WC_ACCESS': 'WC access',
+        'CANT_GO_WITHOUT_CONTRACT': 'I can\'t leave here without a mega contract.',
+        'SMELL_LIKE_PEACH': 'It smells like peach and poop.',
+        'CALL_LIFT': 'Elevatooooooooooooooooooor!!',
+        'SHOULD_PUSH_THE_BUTTON': 'I should push the button first.',
+        '4TH_FLOOR_SIGNAL': '4th floor signal',
+        'IM_AT_FOURTH_FLOOR': 'I\'m at fourth floor.',
+        'DOOR_LOBBY_TO_KITCHEN_LOBBY': 'access door',
+        'HIGH_SECURITY': 'Higher security door.'
     }
 };

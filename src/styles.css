@@ -26,19 +26,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 #game {
-  width: 99vw;
   height: auto;
   margin: 0 auto;
 }
 
 #game canvas {
   box-sizing: border-box;
-  min-width: 99vw !important;
-  height: auto !important;
   cursor: url('assets/images/ui/custom-cursor.png') 16 16, auto !important;
   cursor: -webkit-image-set( url('assets/images/ui/custom-cursor.png') 1x, url('assets/images/ui/custom-cursor@2x.png') 2x) 16 16, auto !important;
 }
