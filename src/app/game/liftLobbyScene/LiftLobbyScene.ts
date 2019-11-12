@@ -9,6 +9,7 @@ import { LiftAButton } from './LiftAButton';
 import { LiftBButton } from './LiftBButton';
 import { LobbyDoorToWc } from './LobbyDoorToWc';
 import { FouthFloorSignal } from './FouthFloorSignal';
+import { Bin } from './Bin';
 
 
 const sceneOptions = {
@@ -30,7 +31,8 @@ const sceneOptions = {
         new LiftBDoor(),
         new LiftAButton(),
         new LiftBButton(),
-        new FouthFloorSignal()
+        new FouthFloorSignal(),
+        new Bin()
     ]
 };
 

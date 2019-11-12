@@ -247,10 +247,14 @@ export const DOCTORTILLA_LABELS: ILabels = {
         '4TH_FLOOR_SIGNAL': 'cartel cuarta planta',
         'IM_AT_FOURTH_FLOOR': 'Estoy en la cuarta planta.',
         'DOOR_LOBBY_TO_KITCHEN_LOBBY': 'puerta de acceso',
-        'HIGH_SECURITY': 'De altísima seguridad.'
-
-
-
+        'HIGH_SECURITY': 'De altísima seguridad.',
+        'SHOULD_LEAVE_VANDALISM': 'Debería dejar el vandalismo para cuando lleve más tiempo aquí.',
+        'BIN': 'papelera',
+        'REGULAR_BIN': 'Una papelera normal y corriente.',
+        'TRYING_TO_MAKE_A_POINT': '¿Intentas decirme algo?',
+        'I_DONT_WANT': 'No quiero tirar mi CV a la papelera.',
+        'YOURE_A_BAD_PERSON': 'Eres una mala persona.',
+        'EVERYTHING_IS_TRUE_BUT': 'Todo lo que pone aquí es cierto salvo alguna cosa.',
     },
     'en': {
         'A_BROOM_THE_PERFECT_CLEANING_INSTRUMENT': 'A broom, the perfect cleaning instrument.',
@@ -498,6 +502,13 @@ export const DOCTORTILLA_LABELS: ILabels = {
         '4TH_FLOOR_SIGNAL': '4th floor signal',
         'IM_AT_FOURTH_FLOOR': 'I\'m at fourth floor.',
         'DOOR_LOBBY_TO_KITCHEN_LOBBY': 'access door',
-        'HIGH_SECURITY': 'Higher security door.'
+        'HIGH_SECURITY': 'Higher security door.',
+        'SHOULD_LEAVE_VANDALISM': 'I should leave vandalism for later.',
+        'BIN': 'bin',
+        'REGULAR_BIN': 'A regular bin.',
+        'TRYING_TO_MAKE_A_POINT': 'Are you trying to make a point?.',
+        'I_DONT_WANT': 'I don\'t want to tosh my CV.',
+        'YOURE_A_BAD_PERSON': 'You are a bad person.',
+        'EVERYTHING_IS_TRUE_BUT': 'Everything in this document is true except some small things.',        
     }
 };

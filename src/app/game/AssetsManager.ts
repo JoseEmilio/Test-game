@@ -109,6 +109,8 @@ const IMAGES: IImagesInfo = {
     'WC_ACCESS': IMAGES_ROOT + 'liftlobby/WC_ACCESS.png',
     '4TH_FLOOR_SIGNAL': IMAGES_ROOT + 'liftlobby/4TH_FLOOR_SIGNAL.png',
     'DOOR_LOBBY_TO_KITCHEN_LOBBY': IMAGES_ROOT + 'liftlobby/DOOR_LOBBY_TO_KITCHEN_LOBBY.png',
+    'BIN': IMAGES_ROOT + 'liftlobby/BIN.png',
+    'CV_INV': IMAGES_ROOT + 'liftlobby/CV_INV.png',
 };
 
 const FONTS: IFontsInfo = {

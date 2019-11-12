@@ -1,6 +1,6 @@
 import { Player } from '../engine/models/Player';
 import { randomText } from '../engine/utils/RandomText';
-import { Coin } from './BackstageScene/Coin';
+import { CV } from './liftLobbyScene/CV';
 import { activeInventory } from '../engine/state/ActiveInventory.singleton';
 import { style } from '../engine/ui/Style';
 import { scenes } from '../engine/state/Scenes.singleton';
@@ -37,7 +37,7 @@ const MIN_REFLECT_ANSWERS = 4;
 export class DoctortillaPlayer extends Player {
     constructor() {
         super(options);
-        this.inventory.add(new Coin());
+        this.inventory.add(new CV());
     }
 
     reflect(): void {

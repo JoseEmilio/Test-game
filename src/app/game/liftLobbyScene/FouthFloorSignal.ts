@@ -3,7 +3,7 @@ import { DoctortillaPlayer } from '../DoctortillaPlayer';
 
 let options = {
     id: '4TH_FLOOR_SIGNAL',
-    x: 288,
+    x: 292,
     y: 36,
     spriteId: '4TH_FLOOR_SIGNAL',
     name: '4TH_FLOOR_SIGNAL'
@@ -16,5 +16,9 @@ export class FouthFloorSignal extends Thing {
 
     protected lookAction(player: DoctortillaPlayer) { 
         player.say('IM_AT_FOURTH_FLOOR');
+    }
+
+    protected takeAction(player: DoctortillaPlayer) { 
+        player.say('SHOULD_LEAVE_VANDALISM');
     }
 }
