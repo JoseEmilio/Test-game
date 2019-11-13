@@ -16,17 +16,25 @@ export class Bin extends Thing {
         super(options);
     }
 
-    protected lookAction(player: DoctortillaPlayer) { 
+    protected lookAction(player: DoctortillaPlayer) {
         player.say('REGULAR_BIN');
     }
 
-    protected useAction(player: DoctortillaPlayer) { 
+    protected useAction(player: DoctortillaPlayer) {
         if (selectedThing.thing.id === 'cv') {
-            player.say(randomText(
-                'TRYING_TO_MAKE_A_POINT',
-                'I_DONT_WANT',
-                'YOURE_A_BAD_PERSON'
-            ));         
+            if (selectedThing.thing.getAttr('IN_WC')) {
+                player.say('YOU_ALREADY_THROW_TO_WC');
+            } else {
+                player.say(randomText(
+                    'TRYING_TO_MAKE_A_POINT',
+                    'I_DONT_WANT',
+                    'YOURE_A_BAD_PERSON'
+                ));
+            }
         }
+    }
+
+    protected openAction(player: DoctortillaPlayer) {
+        player.say('NOT_SO_NEEDY');
     }
 }

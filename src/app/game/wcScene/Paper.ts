@@ -1,20 +1,19 @@
 import { Thing } from '../../engine/models/Thing';
 import { Player } from '../../engine/models/Player';
 
-export class CV extends Thing {
+export class Paper extends Thing {
     constructor() {
         let options = {
-            id: 'cv',
-            inventoryImageId: 'CV_INV',
-            name: 'CV',
+            id: 'toilet_paper',
+            inventoryImageId: 'PAPER_INV',
+            name: 'TOILET_PAPER',
             directlyInInventory: true
         };
         super(options);    
-        this.changeAttr('IN_WC', false);    
     }
 
     lookAction(player: Player): void  {
-        player.say('EVERYTHING_IS_TRUE_BUT');
+        player.say('ALWAYS_USEFUL');
     }
 
 }

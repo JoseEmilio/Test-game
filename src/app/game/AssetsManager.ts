@@ -49,6 +49,14 @@ const SPRITES: ISpritesInfo = {
     'TAP_SPRITE': [IMAGES_ROOT + 'kitchen/TAP.png', 37, 16, 2],
     'STAGE_TO_OUTSIDE_DOOR_SPRITE': [IMAGES_ROOT + 'kitchen/STAGE_OUTSIDE_DOOR.png', 30, 117, 2],
     'FRIDGE_SPRITE': [IMAGES_ROOT + 'kitchen/FRIDGE.png', 85, 107, 2],
+
+
+    // NEW
+
+    // WC
+    'SINK_SPRITE': [IMAGES_ROOT + 'wc/SINK_SPRITE.png', 33, 39, 2],
+    'WC_SPRITE': [IMAGES_ROOT + 'wc/WC_SPRITE.png', 30, 40, 2]
+
 };
 
 const IMAGES: IImagesInfo = {
@@ -111,6 +119,17 @@ const IMAGES: IImagesInfo = {
     'DOOR_LOBBY_TO_KITCHEN_LOBBY': IMAGES_ROOT + 'liftlobby/DOOR_LOBBY_TO_KITCHEN_LOBBY.png',
     'BIN': IMAGES_ROOT + 'liftlobby/BIN.png',
     'CV_INV': IMAGES_ROOT + 'liftlobby/CV_INV.png',
+
+    // WC
+    'WC_BG': IMAGES_ROOT + 'wc/WC_BG.png',
+    'SIGN': IMAGES_ROOT + 'wc/SIGN.png',
+    'URINALS': IMAGES_ROOT + 'wc/URINALS.png',
+    'WC': IMAGES_ROOT + 'wc/WC.png',
+    'WC_LOBBY_ACCESS': IMAGES_ROOT + 'wc/WC_LOBBY_ACCESS.png',
+    'DISPENSER': IMAGES_ROOT + 'wc/DISPENSER.png',
+    'PAPER_INV': IMAGES_ROOT + 'wc/PAPER_INV.png',
+
+
 };
 
 const FONTS: IFontsInfo = {

@@ -1,10 +1,9 @@
 import { Game } from '../engine/models/Game';
 import { DOCTORTILLA_LABELS } from './DoctortillaLabels';
 import { DoctortillaPlayer } from './DoctortillaPlayer';
-import { BackstageScene } from './backstageScene/BackstageScene';
-import { BackyardScene } from './backyardScene/BackyardScene';
-import { KitchenScene } from './kitchenScene/KitchenScene';
 import { LiftLobbyScene } from './liftLobbyScene/LiftLobbyScene';
+import { WCScene } from './wcScene/WCScene';
+
 import { Directions } from '../engine/utils/Directions';
 import { uiBlocker } from '../engine/ui/UIBlocker.singleton';
 
@@ -14,10 +13,8 @@ export class DoctortillaGame extends Game {
             labels: DOCTORTILLA_LABELS,
             player: new DoctortillaPlayer(),
             scenes: [
-                new BackstageScene(),
-                new BackyardScene(),
-                new KitchenScene(),
                 new LiftLobbyScene(),
+                new WCScene()
             ],
             initialSceneId: 'LIFTLOBBY',
             songs: ['ALLI_DONDE', 'SUBETE']

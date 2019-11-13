@@ -45,6 +45,12 @@ export class DoctortillaPlayer extends Player {
         this.say(randomText.apply(this, possibleReflections));
     }
 
+    removePaper(): void {
+        let inventory = activeInventory.getActiveInventory();
+        let paper = inventory.getById('toilet_paper');
+        inventory.remove(paper);
+    }
+
     hasCompleteCostume(): Boolean {
         return this.getAttr('COSTUME_COMPLETE');
     }
