@@ -269,6 +269,7 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'I_SEE_MY_PHOTO': 'Veo mi foto ahí dentro.',
         'URINALS': 'urinarios',
         'REGULAR_URINALS': 'Unos urinarios normales y corrientes.',
+        'DONT_FEEL_LIKE_IT': 'No tengo ganas.',
         'SIGN': 'cartel',
         'WC_LOBBY_ACCESS': 'vuelta al lobby',
         'DISPENSER': 'dispensador papel',
@@ -284,7 +285,9 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'ITS_STUCK': '¡Se ha atascado!',
         'ITS_ALREADY_STUCK': 'Ya está atascado',
         'WHAT_YOU_HAVE_DONE': 'La que has liao pollito.',
-
+        'MESS_ENOUGH': 'Creo que ya tenemos suficiente estropicio.',
+        'NOT_WHAT_I_MEANT': 'Con "algo más consistente" no me refería a ESO.',
+        'OVER_MY_CV': 'Tío mi CV está ahí dentro. Sería raro.'
     },
     'en': {
         'A_BROOM_THE_PERFECT_CLEANING_INSTRUMENT': 'A broom, the perfect cleaning instrument.',
@@ -554,11 +557,13 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'I_SEE_MY_PHOTO': 'I can see my photo in there.',
         'URINALS': 'urinals',
         'REGULAR_URINALS': 'Just regular urinals.',
+        'DONT_FEEL_LIKE_IT': 'I don\'t feel like it.',
         'SIGN': 'sign',
         'WC_LOBBY_ACCESS': 'back to the lobby',
         'DISPENSER': 'toilet paper dispenser',
         'TOILER_PAPER_LOCKED_UP': 'Toilet paper locked up, the failure of civilization.',
-        'ALWAYS_USEFUL': 'Ok, it\'s always useful.',
+        'OK_ALWAYS_USEFUL': 'Ok, it\'s always useful.',
+        'ALWAYS_USEFUL': 'It\'s always useful.',
         'DONT_THROW_PAPER': 'WARNING: don\'t throw paper to the toiler...',
         'CAN_GET_STUCK': 'can get stuck and cause a hygienic disaster.',
         'TOILET_PAPER': 'toilet paper',
@@ -568,5 +573,8 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'ITS_ALREADY_STUCK': 'It\'s already stuck.',
         'STUCK_WC': 'stuck wc',
         'WHAT_YOU_HAVE_DONE': 'Now look what you\'ve done.',
+        'MESS_ENOUGH': 'It\'s messed enough.',
+        'NOT_WHAT_I_MEANT': 'That\'s NOT what I meant with "something more consistent".',
+        'OVER_MY_CV': 'Dude, my CV is in there... it\'s weird.'
     }
 };

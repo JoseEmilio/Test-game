@@ -1,5 +1,6 @@
 import { Thing } from '../../engine/models/Thing';
 import { DoctortillaPlayer } from '../DoctortillaPlayer';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 let options = {
     id: 'SINK',
@@ -11,6 +12,7 @@ let options = {
         x: 95,
         y: 210
     },
+    preferredAction: Verbs.OPEN
 };
 
 export class Sink extends Thing {
@@ -37,6 +39,7 @@ export class Sink extends Thing {
             player.say('It is already open!');
         } else {
             this.changeAttr('OPEN', true);
+            this.options.preferredAction = Verbs.CLOSE;
             player.say('SAVE_WATER')
         }
     }
@@ -46,6 +49,7 @@ export class Sink extends Thing {
             player.say('It is already closed!');
         } else {
             this.changeAttr('OPEN', false);
+            this.options.preferredAction = Verbs.OPEN;
         }
     }
 

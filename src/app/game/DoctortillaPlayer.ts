@@ -24,8 +24,8 @@ spriteOptions.set('pierce_balloon', { frames: [37, 38, 39, 40]});
 
 const options = {
     spriteId: 'DOCTORTILLA_PLAYER_SPRITE',
-    initialX: 93,
-    initialY: 184,
+    initialX: 225,
+    initialY: 165,
     xSpeed: 80, //px/s
     ySpeed: 55, //px/s
     animationSpeed: style.DEFAULT_ANIMATION_SPEED,
@@ -49,40 +49,6 @@ export class DoctortillaPlayer extends Player {
         let inventory = activeInventory.getActiveInventory();
         let paper = inventory.getById('toilet_paper');
         inventory.remove(paper);
-    }
-
-    hasCompleteCostume(): Boolean {
-        return this.getAttr('COSTUME_COMPLETE');
-    }
-
-    hasCable(): Boolean {
-        let inventory = activeInventory.getActiveInventory();
-        let cable = inventory.getById('cable');
-        return !!cable;
-    }
-
-    hasFunnyDrink(): Boolean {
-        let inventory = activeInventory.getActiveInventory();
-        let glass = <any> inventory.getById('glass');
-        return glass && glass.isFunny();
-    }
-
-    removeCostume(): void {
-        let inventory = activeInventory.getActiveInventory();
-        let costume = inventory.getById('costume');
-        inventory.remove(costume);
-    }
-
-    removeCable(): void {
-        let inventory = activeInventory.getActiveInventory();
-        let cable = inventory.getById('cable');
-        inventory.remove(cable);
-    }
-
-    removeGlass(): void {
-        let inventory = activeInventory.getActiveInventory();
-        let glass = inventory.getById('glass');
-        inventory.remove(glass);
     }
 
     deliveredEverything(): Boolean {

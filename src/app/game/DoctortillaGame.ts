@@ -1,6 +1,7 @@
 import { Game } from '../engine/models/Game';
 import { DOCTORTILLA_LABELS } from './DoctortillaLabels';
 import { DoctortillaPlayer } from './DoctortillaPlayer';
+
 import { LiftLobbyScene } from './liftLobbyScene/LiftLobbyScene';
 import { WCScene } from './wcScene/WCScene';
 
@@ -25,7 +26,7 @@ export class DoctortillaGame extends Game {
     protected onStart(): void {
         uiBlocker.block();
         let player = this.options.player;
-        player.moveTo({ x: 115, y: 187})
+        player.moveTo({ x: 223, y: 187})
             /*.then(() => {
                return player.wait(1000);
             })

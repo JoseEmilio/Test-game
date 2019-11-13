@@ -22,6 +22,7 @@ interface IThingOptions {
     isForeground?: Boolean,
     preferredAction?: Verbs,
     preferredInventoryAction? : Verbs,
+    hasSingleAction?: Boolean,
     pickable?: Boolean,
     justDecoration?: Boolean,
     directionToLook?: Directions,
@@ -88,6 +89,10 @@ export abstract class Thing {
 
     isInInventory(): Boolean {
         return this.state && this.state.get('IS_IN_INVENTORY');
+    }
+
+    hasSingleAction(): Boolean {
+        return this.options.hasSingleAction || false;
     }
 
     getPositionToGoTo(): IPoint {

@@ -3,6 +3,7 @@ import { Directions } from '../../engine/utils/Directions';
 
 import { DoctortillaPlayer } from '../DoctortillaPlayer';
 import { Paper } from './Paper';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 let options = {
     id: 'DISPENSER',
@@ -13,7 +14,8 @@ let options = {
     goToPosition: {
         x: 126,
         y: 164
-    }
+    },
+    preferredAction: Verbs.LOOK
 };
 
 export class Dispenser extends Thing {

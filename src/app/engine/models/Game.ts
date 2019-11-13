@@ -109,7 +109,7 @@ export abstract class Game {
     }
 
     private selectThingForMultipleObjectVerb(thing: Thing): void {
-        if (selectedThing.thing) {
+        if (selectedThing.thing || thing.hasSingleAction()) {
             thing.applyAction(selectedVerb.verb, this.player);
             actionDispatcher.execute(Actions.ACTION_APPLIED);
         } else {

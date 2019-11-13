@@ -1,6 +1,8 @@
 import { Thing } from '../../engine/models/Thing';
 import { DoctortillaPlayer } from '../DoctortillaPlayer';
 import { Directions } from '../../engine/utils/Directions';
+import { selectedThing } from '../../engine/state/SelectedObjects';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 let options = {
     id: 'URINALS',
@@ -12,7 +14,9 @@ let options = {
         x: 338,
         y: 164
     },
-    directionToLook: Directions.UP
+    directionToLook: Directions.UP,
+    hasSingleAction: true,
+    preferredAction: Verbs.LOOK
 };
 
 export class Urinals extends Thing {
@@ -23,6 +27,13 @@ export class Urinals extends Thing {
     protected lookAction(player: DoctortillaPlayer) { 
         player.say('REGULAR_URINALS');
     }
+    protected useAction(player: DoctortillaPlayer) {
+        if (!selectedThing.thing)
+        {
+            return player.say('DONT_FEEL_LIKE_IT');
+        }
 
+        player.say('I_DONT_KNOW_HOW_TO_DO_THAT');
+    }
 
 }

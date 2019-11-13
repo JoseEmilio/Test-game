@@ -33,7 +33,7 @@ class HighlightedThing extends GenericHighlightedThing {
     private highlightThingForMultipleObjectVerb(thing: Thing): void {
         if (selectedThing.thing) {
             this.highlightThing(thing);
-        } else if (thing.isInInventory()) {
+        } else if (thing.isInInventory() || thing.hasSingleAction()) {
             this.highlightThing(thing);
         }
     }

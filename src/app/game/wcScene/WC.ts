@@ -45,19 +45,42 @@ export class WC extends Thing {
     }
 
     protected useAction(player: DoctortillaPlayer) {
+        if (!selectedThing.thing)
+        {
+           return this.useIt(player);
+        }
+
         if (this.isStuck())
         {
             return player.say('ITS_ALREADY_STUCK');
         }
 
         if (selectedThing.thing.id === 'cv') {
-           this.throwCV(player);
+           return this.throwCV(player);
         }
 
         if (selectedThing.thing.id === 'toilet_paper') {
-            this.throwPaper(player);
+            return this.throwPaper(player);
         }
 
+        player.say('I_DONT_KNOW_HOW_TO_DO_THAT');
+    }
+
+    private useIt(player: DoctortillaPlayer)
+    {
+        if (this.isStuck()) {
+            return player.say('MESS_ENOUGH');
+        }
+
+        if (this.fullOfPaper()) {
+            return player.say('NOT_WHAT_I_MEANT');
+        }
+
+        if (this.getAttr('CV_IN')) {
+            return player.say('OVER_MY_CV');
+        }
+
+        return player.say('RATHER_BE_ALONE');
     }
 
     private throwCV(player: DoctortillaPlayer) {
@@ -89,7 +112,7 @@ export class WC extends Thing {
     private throwPaper(player: DoctortillaPlayer) {
         player.removePaper();
         this.changeAttr('PAPER_IN', this.getAttr('PAPER_IN') + 1);
-        if (this.getAttr('PAPER_IN') > 2) {
+        if (this.fullOfPaper()) {
             if (!this.getAttr('CV_IN')) {
                 player.say('PAPER_IS_TOO_THIN');
             } else {
@@ -106,7 +129,11 @@ export class WC extends Thing {
     }
 
     isStuck(): boolean {
-        return this.getAttr('CV_IN') && (this.getAttr('PAPER_IN') > 2);
+        return this.getAttr('CV_IN') && this.fullOfPaper();
+    }
+
+    fullOfPaper(): boolean {
+        return this.getAttr('PAPER_IN') > 2;
     }
 
     protected onStateChange(): void {

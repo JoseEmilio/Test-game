@@ -2,13 +2,15 @@ import { Thing } from '../../engine/models/Thing';
 import { Directions } from '../../engine/utils/Directions';
 
 import { DoctortillaPlayer } from '../DoctortillaPlayer';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 let options = {
     id: 'SIGN',
     x: 230,
     y: 87,
     spriteId: 'SIGN',
-    name: 'SIGN'
+    name: 'SIGN',
+    preferredAction: Verbs.LOOK
 };
 
 export class OtherSign extends Thing {

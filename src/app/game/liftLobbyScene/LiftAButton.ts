@@ -1,12 +1,14 @@
 import { Thing } from '../../engine/models/Thing';
 import { DoctortillaPlayer } from '../DoctortillaPlayer';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 let options = {
     id: 'LIFT_A_BUTTON',
     x: 190,
     y: 97,
     spriteId: 'LIFT_BUTTON',
-    name: 'LIFT_BUTTON'
+    name: 'LIFT_BUTTON',
+    preferredAction: Verbs.PUSH
 };
 
 export class LiftAButton extends Thing {

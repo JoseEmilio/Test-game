@@ -1,5 +1,6 @@
 import { WC } from './WC';
 import { Directions } from '../../engine/utils/Directions';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 let options = {
     id: 'WC_A',
@@ -11,7 +12,9 @@ let options = {
         x: 140,
         y: 166
     },
-    directionToLook: Directions.UP
+    hasSingleAction: true,
+    directionToLook: Directions.UP,
+    preferredAction: Verbs.LOOK
 };
 
 export class WCA extends WC {
