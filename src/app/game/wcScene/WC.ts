@@ -44,7 +44,7 @@ export class WC extends Thing {
         }
     }
 
-    protected useAction(player: DoctortillaPlayer) {
+    protected useAction(player: DoctortillaPlayer): void | Promise<void> {
         if (!selectedThing.thing)
         {
            return this.useIt(player);
@@ -63,7 +63,7 @@ export class WC extends Thing {
             return this.throwPaper(player);
         }
 
-        player.say('I_DONT_KNOW_HOW_TO_DO_THAT');
+        return player.say('I_DONT_KNOW_HOW_TO_DO_THAT');
     }
 
     private useIt(player: DoctortillaPlayer)
