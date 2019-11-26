@@ -52,11 +52,15 @@ const SPRITES: ISpritesInfo = {
 
 
     // NEW
+    // Liftlobby
+    'DOOR_LOBBY_TO_KITCHEN_LOBBY_SPRITE': [ IMAGES_ROOT + 'liftlobby/DOOR_LOBBY_TO_KITCHEN_LOBBY_SPRITE.png', 67, 150, 2],
 
     // WC
     'SINK_SPRITE': [IMAGES_ROOT + 'wc/SINK_SPRITE.png', 33, 39, 2],
-    'WC_SPRITE': [IMAGES_ROOT + 'wc/WC_SPRITE.png', 30, 40, 2]
+    'WC_SPRITE': [IMAGES_ROOT + 'wc/WC_SPRITE.png', 30, 40, 2],
 
+    // KITCHENLOBBY
+    'KITCHEN_LOBBY_TO_LIFT_LOBBY_DOOR_SPRITE': [IMAGES_ROOT + 'kitchenlobby/KITCHEN_LOBBY_TO_LIFT_LOBBY_DOOR_SPRITE.png', 116, 117, 2],
 };
 
 const IMAGES: IImagesInfo = {
@@ -116,7 +120,6 @@ const IMAGES: IImagesInfo = {
     'LIFT_BUTTON': IMAGES_ROOT + 'liftlobby/LIFT_BUTTON.png',
     'WC_ACCESS': IMAGES_ROOT + 'liftlobby/WC_ACCESS.png',
     '4TH_FLOOR_SIGNAL': IMAGES_ROOT + 'liftlobby/4TH_FLOOR_SIGNAL.png',
-    'DOOR_LOBBY_TO_KITCHEN_LOBBY': IMAGES_ROOT + 'liftlobby/DOOR_LOBBY_TO_KITCHEN_LOBBY.png',
     'BIN': IMAGES_ROOT + 'liftlobby/BIN.png',
     'CV_INV': IMAGES_ROOT + 'liftlobby/CV_INV.png',
 
@@ -129,6 +132,11 @@ const IMAGES: IImagesInfo = {
     'DISPENSER': IMAGES_ROOT + 'wc/DISPENSER.png',
     'PAPER_INV': IMAGES_ROOT + 'wc/PAPER_INV.png',
 
+    // KITCHENLOBBY
+    'KITCHEN_LOBBY_BG': IMAGES_ROOT + 'kitchenlobby/KITCHEN_LOBBY_BG.png',
+    'COUCH': IMAGES_ROOT + 'kitchenlobby/COUCH.png',
+    'POSTER_1': IMAGES_ROOT + 'kitchenlobby/POSTER_1.png',
+    'POSTER_2': IMAGES_ROOT + 'kitchenlobby/POSTER_2.png',
 
 };
 

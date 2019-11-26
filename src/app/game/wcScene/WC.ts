@@ -3,6 +3,7 @@ import { IPoint, } from '../../engine/utils/Interfaces';
 import { Directions } from '../../engine/utils/Directions';
 import { selectedThing } from '../../engine/state/SelectedObjects';
 import { uiBlocker } from '../../engine/ui/UIBlocker.singleton';
+import { Verbs } from '../../engine/stores/Verbs.store';
 
 import { DoctortillaPlayer } from '../DoctortillaPlayer';
 
@@ -13,9 +14,9 @@ interface IWCOptions {
     y?: number,
     goToPosition?: IPoint,
     spriteId: string,
-    directionToLook?: Directions
+    directionToLook?: Directions,
+    preferredAction?: Verbs
 }
-
 
 export class WC extends Thing {
     constructor(protected options: IWCOptions) {
@@ -37,11 +38,18 @@ export class WC extends Thing {
         {
             return player.say('WHAT_YOU_HAVE_DONE');
         }
+
+        if (this.fullOfPaper())
+        {
+            return player.say('FULL_OF_PAPER');
+        }
+
         if (this.getAttr('CV_IN')) {
             player.say('I_SEE_MY_PHOTO');
         } else {
             player.say('I_COULD_USE_THEN_DAILY');
         }
+        
     }
 
     protected useAction(player: DoctortillaPlayer): void | Promise<void> {

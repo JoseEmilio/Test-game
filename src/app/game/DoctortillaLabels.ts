@@ -287,7 +287,21 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'WHAT_YOU_HAVE_DONE': 'La que has liao pollito.',
         'MESS_ENOUGH': 'Creo que ya tenemos suficiente estropicio.',
         'NOT_WHAT_I_MEANT': 'Con "algo más consistente" no me refería a ESO.',
-        'OVER_MY_CV': 'Tío mi CV está ahí dentro. Sería raro.'
+        'OVER_MY_CV': 'Tío mi CV está ahí dentro. Sería raro.',
+        'FULL_OF_PAPER': 'Está lleno de papel, pero aún cuela. Necesita algo más consistente.',
+
+        // KITCHEN LOBBY
+        'KITCHEN_LOBBY_TO_LIFT_LOBBY_DOOR': 'puerta de vuelta al lobby',
+        'COUCH': 'sillón',
+        'LOOK_CONFORTABLE': 'Parece confortable. Seguro que los empleados se echan aquí siestas, como en El Mentalista.',
+        'TOO_SOON': 'Quizá todavía es pronto, mejor cuando lleve aquí trabajando al menos una semana. ¡Me han dicho que hay una playstation!.',
+        'POSTER1': 'póster',
+        'LAB_CRAZY_DAYS1': 'Está en inglés pero te lo traduzco porque tengo nivel medio/alto:',
+        'LAB_CRAZY_DAYS2': 'Locos de laboratorio, atrévete a pensar fuera de la caja, piensa locamente.',
+        'LAB_CRAZY_DAYS3': 'Nota: los proyectos que piensen diferente serán descartados.',
+        'POSTER2': 'póster',
+        'ASTRONAUT': 'Parece un astronauta haciendo de vientre en un cráter de la luna. Qué disruptivo.'
+
     },
     'en': {
         'A_BROOM_THE_PERFECT_CLEANING_INSTRUMENT': 'A broom, the perfect cleaning instrument.',
@@ -575,6 +589,19 @@ export const DOCTORTILLA_LABELS: ILabels = {
         'WHAT_YOU_HAVE_DONE': 'Now look what you\'ve done.',
         'MESS_ENOUGH': 'It\'s messed enough.',
         'NOT_WHAT_I_MEANT': 'That\'s NOT what I meant with "something more consistent".',
-        'OVER_MY_CV': 'Dude, my CV is in there... it\'s weird.'
+        'OVER_MY_CV': 'Dude, my CV is in there... it\'s weird.',
+        'FULL_OF_PAPER': 'It\'s full of paper but not stuck.',
+
+        // KITCHEN LOBBY
+        'KITCHEN_LOBBY_TO_LIFT_LOBBY_DOOR': 'door back to the lobby',
+        'COUCH': 'couch',
+        'LOOK_CONFORTABLE': 'It seems comfortable. Surely the employees take naps here, as in The Mentalist.',
+        'TOO_SOON': 'Maybe it\'s still early, better when I\'ve been working here for at least a week. I have been told that there is a playstation!',
+        'POSTER1': 'poster',
+        'LAB_CRAZY_DAYS1': 'It is in English but I translate it because I have a medium / high level:',
+        'LAB_CRAZY_DAYS2': 'Lab crazy, dare to think outside the box, think crazy.',
+        'LAB_CRAZY_DAYS3': 'Note: projects that think differently will be discarded.',
+        'POSTER2': 'poster',
+        'ASTRONAUT': 'It looks like an astronaut doing bowel movements in a crater of the moon. How disruptive.'
     }
 };

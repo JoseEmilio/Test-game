@@ -41,4 +41,8 @@ export class Bin extends Thing {
     protected openAction(player: DoctortillaPlayer) {
         player.say('NOT_SO_NEEDY');
     }
+
+    protected pushAction(player: DoctortillaPlayer) { 
+        player.say('SHOULD_LEAVE_VANDALISM');
+    }    
 }

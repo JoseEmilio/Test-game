@@ -4,6 +4,7 @@ import { DoctortillaPlayer } from './DoctortillaPlayer';
 
 import { LiftLobbyScene } from './liftLobbyScene/LiftLobbyScene';
 import { WCScene } from './wcScene/WCScene';
+import { KitchenlobbyScene } from './kitchenlobbyScene/kitchenlobbyScene';
 
 import { Directions } from '../engine/utils/Directions';
 import { uiBlocker } from '../engine/ui/UIBlocker.singleton';
@@ -15,7 +16,8 @@ export class DoctortillaGame extends Game {
             player: new DoctortillaPlayer(),
             scenes: [
                 new LiftLobbyScene(),
-                new WCScene()
+                new WCScene(),
+                new KitchenlobbyScene()
             ],
             initialSceneId: 'LIFTLOBBY',
             songs: ['ALLI_DONDE', 'SUBETE']
